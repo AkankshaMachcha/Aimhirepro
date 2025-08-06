@@ -1,6 +1,6 @@
 # AimHirePro - Frontend
 
- **AimHirePro** is a modern, AI-powered resume analysis and job description matcher platform.  
+**AimHirePro** is a modern, AI-powered resume analysis and job description matcher platform.  
 This repository contains the **frontend** of the application built using **React**, **Redux**, **Bootstrap**, and **Material UI**.
 
 ---
@@ -30,32 +30,41 @@ This repository contains the **frontend** of the application built using **React
 
 ---
 
-## Folder Structure (Simplified)
+## Folder Structure
 
 ```
 aimhire-frontend/
-├── public/                   # Static files like index.html and favicon
+├── public/                         # Static files
 ├── src/
-│   ├── assets/              # Images and CSS files
-│   ├── components/          # Reusable UI components (buttons, navbar, etc.)
-│   ├── pages/               # Route-level pages (Home, Resume Match, etc.)
-│   ├── redux/               # Redux store and slices
-│   ├── services/            # Axios service files (API calls)
-│   ├── App.js               # Main component with route definitions
-│   └── index.js             # Entry point of the React app
-├── .env.example             # Example environment file (no secrets)
-├── package.json             # Dependencies and scripts
-└── README.md                # Project overview
+│   ├── assets/                    # Images, logos, other media
+│   ├── components/               # Reusable React components (e.g. Navbar, Modal)
+│   ├── constants/                # Constants like enums, config variables
+│   ├── hooks/                    # Custom React hooks (e.g. token expiry check)
+│   ├── pages/                    # Route-level pages (Home, Dashboard, etc.)
+│   ├── redux/                    # Redux slices and store configuration
+│   ├── routes/                   # React Router route definitions
+│   ├── services/                 # API service layer (Axios)
+│   ├── styles/                   # Custom CSS or style modules
+│   ├── App.js                    # Main app component and router
+│   ├── index.js                  # App entry point
+│   ├── App.css / index.css       # Global styling
+│   └── setupTests.js             # Testing setup
+├── .env.example                   # Sample env file (no real secrets)
+├── .gitignore
+├── README.md
+├── package.json
+└── package-lock.json
 ```
 
 ---
 
-## Live Demo
+## 🌐 Live Demo
 
 🔗 [https://aimhirepro.tech](https://aimhirepro.tech)  
+
 ---
 
-## Getting Started (Local Setup)
+## Getting Started
 
 ```bash
 # 1. Clone the repo
@@ -65,11 +74,11 @@ cd AimHirePro
 # 2. Install dependencies
 npm install
 
-# 3. Create a .env file
+# 3. Create a .env file from example
 cp .env.example .env
-# Add your API base URL in .env
+# Add your API_BASE_URL in the .env file
 
-# 4. Start the development server
+# 4. Start development server
 npm start
 ```
 
@@ -77,8 +86,8 @@ npm start
 
 ## Note
 
-- This repository only includes the **frontend** of AimHirePro.
-- The **backend (Spring Boot)** and **AI matcher (FastAPI)** are hosted separately for security reasons.
+- This repo contains **only the frontend** part of AimHirePro.
+- The **backend (Spring Boot)** and **AI matching engine (FastAPI)** are hosted and managed separately for security reasons.
 
 ---
 
