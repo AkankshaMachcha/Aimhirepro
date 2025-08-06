@@ -1,0 +1,223 @@
+/* Container spacing */
+.profile-container {
+  padding: 1.5rem 1rem;
+}
+
+/* Header and Image */
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--lavender-web, #e1e2ef);
+}
+
+/* Upload Button */
+.upload-button {
+  padding: 0.6rem 1rem;
+  font-size: 0.95rem;
+}
+
+/* Profile Section Styling */
+.profile-section {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.profile-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Labels */
+.profile-label {
+  font-weight: 500;
+  color: var(--oxford-blue);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Inputs, Selects, DatePickers */
+.profile-input,
+select.profile-input,
+.react-tel-input .form-control,
+.MuiInputBase-root,
+input.profile-input,
+textarea.profile-input {
+  background-color: #f8f9fa !important;
+  /* light grayish-white */
+  border: 1px solid #ced4da !important;
+  border-radius: 0.375rem !important;
+  font-size: 0.95rem;
+  padding: 0.375rem 0.75rem;
+  width: 100%;
+  box-sizing: border-box;
+  color: #495057;
+}
+
+/* Focus styling */
+.profile-input:focus,
+select.profile-input:focus,
+.react-tel-input .form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+/* Phone input container */
+.react-tel-input {
+  width: 100%;
+}
+
+/* Country flag styling */
+.react-tel-input .flag-dropdown {
+  border: 1px solid #ced4da;
+  border-right: none;
+  border-radius: 0.375rem 0 0 0.375rem;
+  background-color: #f8f9fa;
+}
+
+/* Responsive: small screens */
+@media (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .profile-section .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-image {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Tablet: 768px to 1024px */
+@media (max-width: 1024px) {
+  .profile-container {
+    padding: 1rem;
+  }
+
+  .profile-section {
+    padding: 1.5rem;
+  }
+
+  .profile-section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .profile-label {
+    font-size: 0.95rem;
+  }
+
+  .profile-input {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile: 576px to 768px */
+@media (max-width: 768px) {
+  .profile-section {
+    padding: 1rem;
+  }
+
+  .profile-section .row {
+    flex-direction: column;
+  }
+
+  .profile-section .col-md-4,
+  .profile-section .col-md-6,
+  .profile-section .col-12 {
+    width: 100%;
+  }
+
+  .profile-input,
+  .react-tel-input .form-control {
+    font-size: 0.9rem;
+  }
+
+  .upload-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .profile-section .d-flex.justify-content-end {
+    justify-content: center !important;
+    margin-top: 1rem;
+  }
+
+  .MuiInputBase-root {
+    width: 100%;
+  }
+}
+
+/* Small Devices: under 576px */
+@media (max-width: 576px) {
+  .profile-image {
+    width: 90px;
+    height: 90px;
+  }
+
+  .profile-container {
+    padding: 0.75rem;
+  }
+
+  .profile-section {
+    padding: 0.75rem;
+  }
+
+  .profile-label {
+    font-size: 0.9rem;
+  }
+
+  .profile-section .row.mb-3 {
+    margin-bottom: 1rem !important;
+  }
+
+  .form-control.profile-input {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .upload-button {
+    padding: 0.5rem 1rem;
+  }
+
+  .profile-section .d-flex {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .profile-section .d-flex.justify-content-between {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.75rem;
+  }
+
+  .btn-success {
+    width: 100%;
+  }
+}

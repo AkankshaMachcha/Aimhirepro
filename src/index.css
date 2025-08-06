@@ -1,13 +1,46 @@
+/* In index.css or App.css */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  background-color: #FAFAFA;
+  color: #121212;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Optional: prevent selecting inside inputs (if needed) */
+input,
+textarea {
+  user-select: text !important;
+}
+
+:root {
+  /* Brand Colors */
+  --tang-blue: #0057D9;
+  /* Primary Blue */
+  --royal-blue-web-color: #0A66FF;
+  /* Hover / Secondary Blue */
+  --oxford-blue: #05204A;
+  /* Dark Accent */
+  --seasalt: #FAFAFA;
+  /* Light Background */
+  --vermilion: #EA4335;
+  /* Error Red */
+  --pigment-green: #34A853;
+  /* Success Green */
+  --lavender-web: #E1E2EF;
+  /* Light Grayish Blue */
+  --black: #121212;
+  /* Text Black */
+
+  /* Aliases for compatibility */
+  --primary: var(--tang-blue);
+  --primary-hover: var(--royal-blue-web-color);
+  --text-dark: var(--black);
+  --background: var(--seasalt);
+  --border: #E0E0E0;
+  --success: var(--pigment-green);
+  --error: var(--vermilion);
 }

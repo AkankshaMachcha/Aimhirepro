@@ -1,0 +1,137 @@
+/* Base Styling */
+.modern-template {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 10.5px;
+  color: #121212;
+  width: 794px;
+  min-height: 1123px;
+  max-height: 1123px;
+  padding: 24px 28px;
+  background-color: #fff;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px,
+              rgba(14, 30, 37, 0.32) 0px 2px 16px;
+}
+
+/* Header */
+.modern-header {
+  background-color: #004e64;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.modern-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.modern-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  font-size: 0.9rem;
+}
+
+.modern-icons svg {
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+/* Section Layout */
+.modern-section {
+  display: flex;
+  margin-top: 20px;
+}
+
+.modern-section-left {
+  width: 25%;
+  font-weight: bold;
+  color: #007b9f;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.modern-section-right {
+  width: 75%;
+  font-size: 0.9rem;
+  text-align: justify;
+}
+
+/* Detail rows */
+.modern-detail-row {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Skills and Achievements */
+.modern-subsection {
+  margin-bottom: 12px;
+}
+
+.modern-skill-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 12px;
+  padding-left: 1rem;
+  font-size: 0.8rem;
+}
+
+.modern-skill-grid span {
+  padding-left: 0.5rem;
+}
+
+/* Lists */
+.modern-section-right ul {
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.modern-section-right ul li {
+  font-size: 0.8rem;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+/* Horizontal rule */
+.modern-hr {
+  border-top: 0.5vh solid #7d7a7a;
+  margin-top: 20px;
+}
+
+/* Bold highlights */
+.modern-section-right strong {
+  font-weight: 600;
+}
+
+/* Responsive & Print */
+@media print {
+  .modern-template {
+    transform: scale(0.96);
+    transform-origin: top left;
+  }
+
+  .modern-name {
+    font-size: 1.5rem;
+  }
+
+  .modern-section-left,
+  .modern-section-right,
+  .modern-section-right li {
+    font-size: 0.75rem;
+  }
+
+  .no-print {
+    display: none;
+  }
+}

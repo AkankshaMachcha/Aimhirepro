@@ -1,0 +1,76 @@
+/* src/components/resumeBuilder/SectionCard.css */
+.section-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background-color: white;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  font-family: var(--font-inter);
+}
+
+.section-card:hover {
+  border-color: var(--primaryHover);
+  box-shadow: 0 0 8px rgba(10, 102, 255, 0.15);
+}
+
+.section-tittle {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--textDark);
+  display: flex;
+  align-items: center;
+  text-decoration: none !important;
+}
+
+.hidden-tag {
+  color: gray;
+  font-size: 0.85rem;
+  margin-left: 6px;
+}
+
+.section-card.hidden {
+  background-color: #f1f1f1;
+  opacity: 0.85;
+}
+
+.section-dropdown {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-toggle-clean {
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-toggle-clean:hover {
+  background-color: #eeeeee;
+}
+
+.dots-icon {
+  font-size: 18px;
+  color: #333;
+  margin-top: 2px;
+}
+
+.dropdown-icon {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.custom-toggle::after {
+  display: none !important;
+}
+.section-card {
+  border-left: 5px solid var(--primary);
+  padding-left: 12px;
+}

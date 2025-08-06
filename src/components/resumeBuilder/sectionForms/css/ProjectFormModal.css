@@ -1,0 +1,129 @@
+/* ProjectFormModal.css */
+
+textarea,
+input,
+select {
+  border-radius: 6px;
+  padding: 0.5rem;
+}
+
+textarea {
+  resize: none;
+}
+
+.mt-4 {
+  margin-top: 1.25rem !important;
+}
+
+.text-end {
+  text-align: right !important;
+}
+
+.small {
+  font-size: 0.85rem;
+}
+
+.accordion-button {
+  font-weight: 600;
+}
+
+.accordion-item {
+  margin-bottom: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+}
+
+button.btn-link {
+  color: #0a66ff;
+  font-weight: 500;
+  padding-left: 0;
+  text-decoration: none;
+}
+
+button.btn-link:hover {
+  text-decoration: underline;
+}
+
+button.btn-danger {
+  font-size: 0.85rem;
+}
+
+.entry-sub {
+  font-size: 10px;
+  color: #666;
+  margin-top: 2px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* ✅ Responsive Enhancements */
+@media (max-width: 768px) {
+  .accordion-button {
+    font-size: 0.95rem;
+    padding: 10px 14px;
+  }
+
+  .accordion-body {
+    padding: 14px;
+  }
+
+  .form-label {
+    font-size: 0.9rem;
+  }
+
+  .form-control,
+  .form-select,
+  textarea {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+
+  .small {
+    font-size: 0.82rem;
+  }
+
+  .btn-link {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .accordion-button {
+    font-size: 0.88rem;
+    padding: 8px 12px;
+  }
+
+  .accordion-body {
+    padding: 12px;
+  }
+
+  .form-label {
+    font-size: 0.85rem;
+  }
+
+  .form-control,
+  .form-select,
+  textarea {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+  }
+
+  .btn-link {
+    font-size: 0.85rem;
+  }
+
+  .entry-sub {
+    font-size: 9px;
+  }
+}

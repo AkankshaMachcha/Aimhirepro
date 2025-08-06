@@ -1,0 +1,105 @@
+/* ✅ src/components/resumeBuilder/forms/LanguageFormModal.css */
+
+.accordion-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.accordion-header {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #f0f4ff;
+  color: #0057D9;
+}
+
+button.btn.btn-link {
+  font-weight: 500;
+  color: #0A66FF;
+  text-decoration: none;
+}
+
+button.btn.btn-link:hover {
+  text-decoration: underline;
+  color: #05204A;
+}
+
+.modal-footer button {
+  min-width: 100px;
+}
+
+/* ✅ Responsive Enhancements */
+@media (max-width: 768px) {
+  .accordion-header {
+    font-size: 0.95rem;
+  }
+
+  .accordion-body {
+    padding: 14px;
+  }
+
+  .form-label {
+    font-size: 0.9rem;
+  }
+
+  .form-control,
+  .form-select {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+    border-radius: 6px;
+  }
+
+  .form-check-label {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+
+  .btn-link {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .accordion-header {
+    font-size: 0.88rem;
+  }
+
+  .accordion-body {
+    padding: 10px;
+  }
+
+  .form-label {
+    font-size: 0.85rem;
+  }
+
+  .form-control,
+  .form-select {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+
+  .form-check-label {
+    font-size: 0.85rem;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+  }
+
+  .modal-footer button {
+    min-width: 80px;
+  }
+
+  .btn-link {
+    font-size: 0.85rem;
+  }
+}

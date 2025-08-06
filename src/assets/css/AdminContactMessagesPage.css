@@ -1,0 +1,14 @@
+.unread-message-row {
+  background-color: #fff8e1;
+  font-weight: 500;
+}
+
+.contact-message-table tr:hover {
+  background-color: #f1f7ff;
+  cursor: pointer;
+}
+
+.unread-icon {
+  color: #f44336;
+  font-size: 1.3rem;
+}

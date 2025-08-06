@@ -1,0 +1,87 @@
+/* /assets/css/AdminUserCard.css */
+.admin-user-list-wrapper {
+  padding: 2rem 1.5rem;
+  background-color: #f9fafc;
+  min-height: 100vh;
+}
+
+.admin-user-grid-container {
+  margin-top: 1rem;
+}
+
+/* Optional: Center cards if fewer users */
+.admin-user-list-wrapper .row {
+  justify-content: flex-start;
+}
+
+/* Ensure card spacing looks clean */
+.admin-user-list-wrapper .col {
+  display: flex;
+  justify-content: center;
+}
+
+
+.admin-user-card-tile {
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  height: 100%;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+}
+
+.admin-user-card-tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.admin-user-avatar {
+  width: 70px !important;
+  height: 70px !important;
+  margin: 0 auto;
+  border: 2px solid #e0e0e0;
+}
+
+.admin-user-name {
+  font-weight: 600;
+  color: #05204a;
+}
+
+.admin-user-email {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.admin-user-role-label {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 13px;
+  border-radius: 20px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Free User Style */
+.admin-user-role-label.free {
+  color: #4690f1; /* Gray */
+}
+
+/* Premium User Style */
+.admin-user-role-label.premium {
+  color: #34a853; /* Green (AimHirePro success green) */
+}
+
+
+
+
+
+
+
+.admin-user-status-label {
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 14px;
+  display: inline-block;
+}
+

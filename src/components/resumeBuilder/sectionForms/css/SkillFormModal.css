@@ -1,0 +1,83 @@
+/* ✅ src/components/resumeBuilder/forms/css/SkillFormModal.css */
+
+.accordion-header {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.accordion-body {
+  background-color: #f9f9f9;
+  border-radius: 6px;
+}
+
+.form-control {
+  border-radius: 6px;
+}
+
+button.btn-link {
+  font-size: 14px;
+  padding-left: 0;
+  color: #0a66ff;
+  text-decoration: none;
+}
+
+button.btn-link:hover {
+  text-decoration: underline;
+}
+
+/* ✅ Responsive Enhancements */
+@media (max-width: 768px) {
+  .accordion-header {
+    font-size: 0.95rem;
+  }
+
+  .accordion-body {
+    padding: 14px;
+  }
+
+  .form-label {
+    font-size: 0.9rem;
+  }
+
+  .form-control {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+
+  .btn-link {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .accordion-header {
+    font-size: 0.88rem;
+  }
+
+  .accordion-body {
+    padding: 12px;
+  }
+
+  .form-label {
+    font-size: 0.85rem;
+  }
+
+  .form-control {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+  }
+
+  .btn-link {
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,91 @@
+/* src/components/landing/FeatureSection.css */
+
+.feature-section {
+
+    margin-top: 3rem;
+  background-color: #0A66FF; /* royal-blue-web-color */
+  color: white;
+  padding: 5rem 0;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+.feature-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.feature-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.feature-subtext {
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+  max-width: 750px;
+  margin-inline: auto;
+  line-height: 1.7;
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.feature-card {
+  background-color: white;
+  color: #112467;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 280px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: #0057D9;
+  margin-bottom: 1rem;
+}
+
+.feature-heading {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.feature-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4a4a4a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .feature-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    width: 90%;
+  }
+
+  .feature-title {
+    font-size: 2rem;
+  }
+
+  .feature-subtext {
+    font-size: 1rem;
+  }
+}

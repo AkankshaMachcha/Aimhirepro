@@ -1,0 +1,60 @@
+ResumeCard.match-resume-card {
+  border-radius: 14px;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1.5px solid #dce3ea;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  height: 100%;
+  position: relative;
+  /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04); */
+}
+
+.match-resume-card:hover {
+  transform: translateY(-5px);
+  /* box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); */
+  /* border-color: #228be6; Primary blue glow */
+}
+
+.match-resume-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.match-resume-version {
+  font-weight: 600;
+  color: #228be6;
+  font-size: 0.95rem;
+}
+
+.match-resume-chip {
+  font-size: 0.7rem;
+  height: 20px;
+  margin-left: 8px;
+}
+
+.match-resume-card-body {
+  margin-top: 12px;
+}
+
+.match-resume-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #05204A;
+  margin-bottom: 6px;
+}
+
+.match-resume-summary {
+  font-size: 0.9rem;
+  line-height: 1.35;
+  color: #6c757d;
+  margin-bottom: 12px;
+}
+
+.match-resume-footer {
+  font-size: 0.8rem;
+  color: #999;
+  display: flex;
+  justify-content: space-between;
+}

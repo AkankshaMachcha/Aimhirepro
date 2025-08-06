@@ -1,0 +1,14 @@
+.all-resumes-page {
+  padding-bottom: 40px;
+}
+
+.all-resumes-heading {
+  font-weight: 600;
+  color: #05204A;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.all-resumes-grid {
+  row-gap: 24px; /* vertical spacing between rows */
+}

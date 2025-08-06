@@ -1,0 +1,58 @@
+/* src/assets/css/TemplatesPage.css */
+
+.template-page {
+  max-width: 1200px;
+}
+
+.template-header h2 {
+  font-size: 2rem;
+}
+
+.template-header p {
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+
+.template-card {
+  width: 100%;
+  max-width: 300px;
+  margin: 3vh;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.template-card:hover {
+  transform: translateY(-4px);
+}
+
+.template-thumb-wrapper {
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+}
+
+.template-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.template-menu-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.template-name {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 8px;
+  color: #333;
+  background: none;
+}

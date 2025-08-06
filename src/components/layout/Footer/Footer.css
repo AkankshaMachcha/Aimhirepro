@@ -1,0 +1,165 @@
+/* src/components/layout/Footer.css */
+
+.footer {
+   background-color: #F5F7FB; 
+  padding: 4rem 2rem 2rem;
+  font-family: 'Inter', sans-serif;
+  border-top: 1px solid #E5E4E2 ;
+  color: #05204A;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: auto;
+  gap: 2rem;
+}
+
+.footer-brand {
+  flex: 1 1 220px;
+}
+
+.footer-brand h4 {
+  font-size: 1.8rem;
+  color: #0057D9;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+}
+
+.footer-brand p {
+  font-size: 1rem;
+  color: #4a4a4a;
+  margin: 0;
+}
+
+.footer-brand img.footer-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+.footer-links {
+  flex: 1 1 180px;
+}
+
+.footer-links h5 {
+  font-size: 1.2rem;
+  color: #112467;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-links ul li a {
+  color: #05204A;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #0057D9;
+}
+
+.footer-social {
+  flex: 1 1 220px;
+}
+
+.footer-social h5 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #112467;
+  font-weight: 700;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  color: #0057D9;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #05204A;
+}
+
+.creator {
+  font-size: 0.95rem;
+  color: #4a4a4a;
+}
+
+.creator a {
+  color: #0057D9;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.creator a:hover {
+  text-decoration: underline;
+}
+.footer-social .social-icons a {
+  font-size: 1.6rem;
+  margin: 0 0.6rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Brand Colors */
+.footer-social .linkedin {
+  color: #0077B5; /* LinkedIn Blue */
+}
+
+.footer-social .github {
+  color: #181717; /* GitHub Black */
+}
+
+.footer-social .email {
+  color: #D44638; /* Gmail Red */
+}
+
+/* Hover effect */
+.footer-social .social-icons a:hover {
+  transform: scale(1.15);
+  opacity: 0.9;
+}
+
+
+/* Sticky footer support (wrap page content in a flex column layout) */
+body, html, #root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-links,
+  .footer-social {
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,141 @@
+
+.upgrade-page .plan-box {
+    border: 1.5px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 24px;
+    height: 100%;
+    background-color: #ffffff;
+    transition: box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.upgrade-page .plan-box:hover {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+}
+
+.upgrade-page .plan-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upgrade-page .plan-box h5 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.upgrade-page .plan-features {
+    list-style: none;
+    padding-left: 0;
+    margin: 16px 0;
+    font-size: 15px;
+}
+
+.upgrade-page .plan-features li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+}
+
+.upgrade-page .plan-features li:last-child {
+    border-bottom: none;
+}
+
+.upgrade-page .plan-price {
+    font-size: 17px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.upgrade-page .badge {
+    font-size: 13px;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+/* Tablets: max-width 1024px */
+@media (max-width: 1024px) {
+  .upgrade-page .plan-box {
+    padding: 20px;
+  }
+
+  .upgrade-page .plan-box h5 {
+    font-size: 18px;
+  }
+
+  .upgrade-page .plan-features {
+    font-size: 14px;
+  }
+
+  .upgrade-page .plan-price {
+    font-size: 16px;
+  }
+}
+
+/* Mobile: max-width 768px */
+@media (max-width: 768px) {
+  .upgrade-page h2 {
+    font-size: 1.5rem;
+  }
+
+  .upgrade-page .plan-box {
+    padding: 16px;
+  }
+
+  .upgrade-page .plan-box h5 {
+    font-size: 17px;
+  }
+
+  .upgrade-page .plan-features li {
+    padding: 8px 0;
+    font-size: 14px;
+  }
+
+  .upgrade-page .plan-price {
+    font-size: 15px;
+  }
+
+  .upgrade-page .badge {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}
+
+/* Small Mobile: max-width 576px */
+@media (max-width: 576px) {
+  .upgrade-page {
+    padding: 0 1rem;
+  }
+
+  .upgrade-page h2 {
+    font-size: 1.3rem;
+  }
+
+  .upgrade-page p {
+    font-size: 0.9rem;
+  }
+
+  .upgrade-page .plan-box {
+    padding: 14px;
+  }
+
+  .upgrade-page .plan-features {
+    font-size: 13px;
+  }
+
+  .upgrade-page .plan-box h5 {
+    font-size: 16px;
+  }
+
+  .upgrade-page .plan-price {
+    font-size: 14px;
+  }
+
+  .upgrade-page .badge {
+    font-size: 11px;
+  }
+}

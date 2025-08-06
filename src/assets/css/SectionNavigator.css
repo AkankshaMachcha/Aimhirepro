@@ -1,0 +1,79 @@
+/* Base styles */
+/* Remove default bottom border if any */
+.section-card {
+  border: none !important;
+  box-shadow: none;
+  border-radius: 8px;
+}
+
+/* Optional: If <hr> exists inside card or section, hide it */
+.section-card hr {
+  display: none;
+}
+
+/* Optional: prevent hover styles if you want it super flat */
+.section-card:hover {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+
+/* Icon action buttons */
+.icon-actions {
+  display: flex;
+  gap: 6px;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.icon-btn {
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section-navigator-ui {
+    padding: 12px;
+    border-radius: 8px;
+  }
+
+  .section-card {
+    padding: 10px 14px;
+  }
+
+  .icon-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+
+  .icon-actions {
+    gap: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-card {
+    padding: 8px 12px;
+  }
+
+  .icon-btn {
+    width: 26px;
+    height: 26px;
+    font-size: 13px;
+  }
+
+  .icon-actions {
+    justify-content: space-between;
+    margin-top: 8px;
+  }
+}

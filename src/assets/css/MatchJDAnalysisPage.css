@@ -1,0 +1,16 @@
+.match-analysis .list-group-item {
+  font-size: 15px;
+}
+
+.match-analysis table th,
+.match-analysis table td {
+  vertical-align: middle;
+}
+
+.match-analysis .bi-check-circle-fill {
+  font-size: 1.2rem;
+}
+
+.match-analysis .bi-x-circle-fill {
+  font-size: 1.2rem;
+}

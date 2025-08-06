@@ -1,0 +1,108 @@
+/* PersonalLinkFormModal.css */
+
+.modal-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.modal-title {
+  font-weight: 600;
+}
+
+.accordion-button {
+  background-color: #e9f2ff;
+  font-weight: 500;
+}
+
+.accordion-body {
+  background-color: #fefefe;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+button.btn-link {
+  color: #0A66FF;
+  font-weight: 500;
+}
+
+button.btn-link:hover {
+  text-decoration: underline;
+}
+
+button.btn-danger {
+  margin-top: 10px;
+}
+
+/* ✅ Responsive Enhancements */
+@media (max-width: 768px) {
+  .modal-header {
+    padding: 12px 16px;
+  }
+
+  .modal-title {
+    font-size: 1rem;
+  }
+
+  .accordion-button {
+    font-size: 0.95rem;
+    padding: 10px 14px;
+  }
+
+  .accordion-body {
+    padding: 16px;
+  }
+
+  .form-label {
+    font-size: 0.9rem;
+  }
+
+  .form-control,
+  .form-select {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-header {
+    padding: 10px 12px;
+  }
+
+  .modal-title {
+    font-size: 0.95rem;
+  }
+
+  .accordion-button {
+    font-size: 0.88rem;
+    padding: 8px 12px;
+  }
+
+  .accordion-body {
+    padding: 12px;
+  }
+
+  .form-label {
+    font-size: 0.85rem;
+  }
+
+  .form-control,
+  .form-select {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+  }
+
+  .btn-link {
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,106 @@
+/* signup css*/
+
+.signup-container {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FAFAFA;
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.signup-form {
+  background-color: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  max-width: 1000px;
+  width: 100%;
+}
+
+
+.signup-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0A66FF;
+  text-align: center;
+}
+
+.signup-subtitle {
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.signup-input-field {
+  background-color: #f0f0f0;
+  border: 1px solid #E0E0E0;
+  border-radius: 40px;
+  padding: 0.5rem 1.2rem;
+  display: flex;
+  align-items: center;
+  margin: 1vh;
+}
+
+.signup-input-field i {
+  margin-right: 1rem;
+  color: #888;
+}
+
+.signup-input-field input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  color: #1F1F1F;
+}
+
+.signup-input-field input::placeholder {
+  color: #aaa;
+}
+
+.signup-btn {
+  width: 100%;
+  background-color: #0A66FF;
+  color: #fff;
+  border: none;
+  height: 48px;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 2vh;
+}
+
+
+.signup-btn:hover {
+  background-color: white;
+  color: #0A66FF;
+  border: 1px solid #0A66FF;
+}
+
+.signup-footer {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.signup-footer a {
+  color: #112467;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signup-footer a:hover {
+  text-decoration: underline;
+}
+
+.fas.fa-check-circle {
+  color: #34A853;
+  font-size: 1.1rem;
+}

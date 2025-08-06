@@ -1,0 +1,65 @@
+/* ✅ src/components/resumeBuilder/forms/SummaryFormModal.css */
+
+.summary-char-count {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 4px;
+  text-align: right;
+}
+
+.modal-body textarea {
+  resize: none;
+  border-radius: 6px;
+  padding: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.modal-body select,
+.modal-body input {
+  border-radius: 6px;
+  padding: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.summary-text {
+  font-size: 11px;
+  line-height: 1.5;
+  margin-top: 4px;
+}
+
+/* ✅ Responsive adjustments */
+@media (max-width: 768px) {
+  .modal-body textarea,
+  .modal-body input,
+  .modal-body select {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .summary-char-count {
+    font-size: 0.8rem;
+  }
+
+  .modal-footer .btn {
+    font-size: 0.9rem;
+    min-width: 90px;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-body textarea,
+  .modal-body input,
+  .modal-body select {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+  }
+
+  .summary-char-count {
+    font-size: 0.75rem;
+  }
+
+  .modal-footer .btn {
+    font-size: 0.85rem;
+    min-width: 80px;
+  }
+}

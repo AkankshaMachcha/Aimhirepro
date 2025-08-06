@@ -1,0 +1,192 @@
+/* ✅ EducationFormModal.css */
+
+.accordion-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.accordion-header {
+  font-weight: 600;
+  background-color: #f8f9fa;
+  padding: 10px 16px;
+  border-bottom: 1px solid #ddd;
+  border-radius: 6px 6px 0 0;
+}
+
+.accordion-body {
+  padding: 16px;
+  background-color: #fff;
+}
+
+form .form-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+form .form-control,
+form .form-select {
+  font-size: 0.9rem;
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+
+.add-education-btn {
+  font-weight: 500;
+  color: #0a66ff;
+  text-decoration: none;
+}
+
+.add-education-btn:hover {
+  text-decoration: underline;
+}
+
+/* ✅ Resume Preview Style Overrides */
+
+.section-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #112467;
+  text-transform: uppercase;
+  border-bottom: 1px solid #E0E0E0;
+  margin-top: 0;
+  margin-bottom: 4px;
+  padding-bottom: 2px;
+}
+
+.entry {
+  margin-bottom: 10px;
+}
+
+.entry-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 11px;
+}
+
+.entry-left {
+  flex: 1;
+  font-size: 11px;
+  color: #1F1F1F;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.entry-right {
+  font-size: 10px;
+  color: gray;
+  margin-left: 12px;
+  white-space: nowrap;
+}
+
+.entry-sub {
+  font-size: 10px;
+  color: #666;
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bullet-education {
+  list-style-type: disc;
+  padding-left: 16px;
+  margin-top: 4px;
+  font-size: 10px;
+}
+
+/* Show reorder buttons only on hover */
+.accordion-button .reorder-buttons {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.accordion-button:hover .reorder-buttons {
+  opacity: 1;
+}
+
+/* Smooth transition for draggable items */
+.draggable-edu-item {
+  transition: transform 0.3s ease !important;
+}
+
+/* ✅ Responsive Enhancements */
+@media (max-width: 768px) {
+  .accordion-body {
+    padding: 12px;
+  }
+
+  .accordion-header {
+    padding: 8px 12px;
+  }
+
+  .form-label {
+    font-size: 0.85rem;
+  }
+
+  .form-control,
+  .form-select {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+
+  .entry-top {
+    font-size: 10px;
+  }
+
+  .entry-sub,
+  .entry-right,
+  .entry-left {
+    font-size: 9.5px;
+  }
+
+  .section-title {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 576px) {
+  .accordion-body {
+    padding: 10px;
+  }
+
+  .accordion-header {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+
+  .form-control,
+  .form-select {
+    font-size: 0.8rem;
+    padding: 6px 8px;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+  }
+
+  .section-title {
+    font-size: 10px;
+  }
+
+  .entry-top,
+  .entry-sub,
+  .entry-left,
+  .entry-right {
+    font-size: 9px;
+  }
+
+  .add-education-btn {
+    font-size: 0.85rem;
+  }
+}

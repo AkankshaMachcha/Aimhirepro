@@ -1,0 +1,49 @@
+/* Wrapper around entire preview section */
+.resume-preview-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  overflow-y: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px; /* spacing between pages */
+  background-color: #f8f9fa; /* light background for contrast */
+}
+
+/* Single A4-size page simulation */
+.resume-page {
+  width: 794px;
+  min-height: 1123px;
+  background-color: #ffffff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+  page-break-after: always;
+  padding: 32px 40px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.page-number {
+  position: absolute;
+  bottom: 16px;
+  right: 24px;
+  font-size: 10px;
+  color: #999;
+  font-style: italic;
+}
+
+/* For print preview and PDF rendering */
+@media print {
+  .resume-preview-wrapper {
+    background: none;
+    padding: 0;
+    gap: 0;
+  }
+
+  .resume-page {
+    box-shadow: none;
+    margin: 0 auto;
+    page-break-after: always;
+  }
+}

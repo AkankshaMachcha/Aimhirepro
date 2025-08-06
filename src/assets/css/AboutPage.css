@@ -1,0 +1,110 @@
+/* src/assets/css/AboutPage.css */
+
+.about-container {
+  max-width: 960px;
+  margin: auto;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.about-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.about-subtitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #0057D9;
+}
+
+.about-section ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+
+.creator-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.creator-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #0057D9;
+}
+
+.creator-socials {
+  margin-top: 0.5rem;
+}
+
+.social-link {
+  color: #0057D9;
+  font-size: 1.4rem;
+  transition: transform 0.2s ease;
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+  color: #0a66ff;
+}
+
+.creator-card {
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.creator-card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.creator-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #0057D9;
+}
+
+.creator-socials .social-link {
+  color: #0057D9;
+  transition: color 0.3s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.creator-socials .social-link:hover {
+  color: #0A66FF;
+  transform: scale(1.1);
+}
+
+.creator-socials .social-link {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.creator-socials .social-link.github svg {
+  color: #181717; /* GitHub Black */
+}
+
+.creator-socials .social-link.linkedin svg {
+  color: #0077B5; /* LinkedIn Blue */
+}
+
+.creator-socials .social-link.email svg {
+  color: #D44638; /* Gmail Red */
+}
+
+.creator-socials .social-link:hover {
+  transform: scale(1.2);
+  opacity: 0.85;
+}

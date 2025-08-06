@@ -1,0 +1,206 @@
+/* src/components/resumeBuilder/forms/ExperienceFormModal.css */
+
+.accordion-header {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--textDark);
+}
+
+.accordion-button {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  font-size: 15px;
+  color: #05204a;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #e1e2ef;
+}
+
+.accordion-body {
+  background-color: #fafafa;
+}
+
+.bullet-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.bullet-input input {
+  flex-grow: 1;
+}
+
+.bullet-input button {
+  margin-left: 8px;
+}
+
+.add-btn {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--primary);
+  background: none;
+  border: none;
+  padding: 4px 0;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.add-btn:hover {
+  color: var(--primaryHover);
+  text-decoration: underline;
+}
+
+.add-experience-btn {
+  margin-top: 12px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--primary);
+  background-color: transparent;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.add-experience-btn:hover {
+  color: var(--primaryHover);
+  text-decoration: underline;
+}
+
+.add-experience-btn svg {
+  transition: transform 0.2s ease;
+}
+
+.add-experience-btn:hover svg {
+  transform: translateX(3px);
+}
+
+button.btn-remove-experience {
+  font-size: 0.85rem;
+  padding: 0.25rem 0.5rem;
+}
+
+textarea {
+  resize: none;
+  padding: 0.6rem;
+  border-radius: 6px;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  border-radius: 6px !important;
+  font-size: 0.95rem;
+}
+
+.form-label {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.modal-footer .btn {
+  min-width: 100px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.text-muted {
+  font-size: 0.85rem;
+}
+
+/* ✅ Responsive Enhancements */
+@media (max-width: 768px) {
+  .accordion-body {
+    padding: 14px;
+  }
+
+  .accordion-button {
+    font-size: 0.95rem;
+    padding: 10px 14px;
+  }
+
+  .form-label {
+    font-size: 0.88rem;
+  }
+
+  .form-control,
+  .form-select,
+  textarea {
+    font-size: 0.88rem;
+    padding: 8px 10px;
+  }
+
+  .text-muted {
+    font-size: 0.82rem;
+  }
+
+  .add-btn,
+  .add-experience-btn {
+    font-size: 0.85rem;
+  }
+
+  .btn {
+    font-size: 0.88rem;
+    padding: 6px 12px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .accordion-body {
+    padding: 10px;
+  }
+
+  .accordion-button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .form-label {
+    font-size: 0.85rem;
+  }
+
+  .form-control,
+  .form-select,
+  textarea {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+
+  .text-muted {
+    font-size: 0.8rem;
+  }
+
+  .add-btn,
+  .add-experience-btn {
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+  }
+
+  .modal-footer .btn {
+    min-width: 80px;
+  }
+
+  .card {
+    padding: 8px;
+  }
+}

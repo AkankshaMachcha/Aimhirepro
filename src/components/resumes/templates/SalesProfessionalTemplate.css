@@ -1,0 +1,187 @@
+.salespro-template {
+  font-family: 'Georgia', serif;
+  font-size: 11px;
+  line-height: 1.6;
+  color: #121212;
+  padding: 32px 35px;
+  width: 794px;
+  min-height: 1123px;
+  background-color: #fff;
+  box-sizing: border-box;
+ box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  margin: 0 auto;
+}
+
+.salespro-header {
+  background: #f1f0f0;
+  border-bottom: 2px solid var(--theme-color);
+  padding: 1vh;
+  text-align: center;
+}
+
+.salespro-name {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--theme-color);
+  margin-bottom: 0;
+}
+
+.salespro-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--theme-color);
+  margin-bottom: 0.25rem;
+}
+
+.salespro-contact {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.salespro-contact span {
+  display: block;
+  margin-bottom: 2px;
+  word-break: break-word;
+}
+
+.salespro-body {
+  padding: 1rem 0;
+  background: #fff;
+}
+
+.salespro-section {
+  margin-bottom: 1rem;
+}
+
+.salespro-section h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--theme-color);
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.salespro-section p,
+.salespro-section li,
+.salespro-section span {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  text-align: justify;
+  color: #222;
+}
+
+.salespro-entry {
+  margin-bottom: 0.75rem;
+}
+
+.salespro-entry strong {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.salespro-entry p {
+  font-size: 0.8rem;
+  margin-bottom: 2px;
+}
+
+.salespro-entry ul {
+  padding-left: 1.1rem;
+  margin: 4px 0 0;
+}
+
+.salespro-entry ul li {
+  font-size: 0.8rem;
+  margin-bottom: 2px;
+  text-align: justify;
+}
+
+.salespro-skill-list,
+.salespro-section ul {
+  list-style-type: disc;
+  padding-left: 1rem;
+}
+
+.salespro-skill-list li,
+.salespro-section ul li {
+  font-size: 0.8rem;
+  margin-bottom: 3px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .salespro-template {
+    font-size: 10.5px;
+    padding: 12px;
+  }
+
+  .salespro-name {
+    font-size: 1.4rem;
+  }
+
+  .salespro-title {
+    font-size: 0.95rem;
+  }
+
+  .salespro-section h3 {
+    font-size: 0.85rem;
+  }
+
+  .salespro-section p,
+  .salespro-section li {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .salespro-template {
+    font-size: 10px;
+  }
+
+  .salespro-name {
+    font-size: 1.3rem;
+  }
+
+  .salespro-title {
+    font-size: 0.9rem;
+  }
+
+  .salespro-contact span {
+    font-size: 0.7rem;
+  }
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .salespro-template {
+    padding: 10px;
+    page-break-after: avoid;
+  }
+
+  .salespro-name {
+    font-size: 1.5rem;
+  }
+
+  .salespro-title {
+    font-size: 1rem;
+  }
+
+  .salespro-section h3 {
+    font-size: 0.85rem;
+  }
+
+  .salespro-section p,
+  .salespro-section li {
+    font-size: 0.75rem;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}

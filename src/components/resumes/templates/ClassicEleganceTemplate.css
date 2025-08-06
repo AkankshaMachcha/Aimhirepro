@@ -1,0 +1,197 @@
+.classic-template {
+  font-family: 'Georgia', serif;
+  font-size: 11px;
+  line-height: 1.6;
+  color: #121212;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 35px;
+  width: 794px;
+  min-height: 1123px;
+  background-color: #fff;
+  margin: 0 auto;
+  box-sizing: border-box;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px,
+              rgba(14, 30, 37, 0.32) 0px 2px 16px;
+}
+
+/* HEADER */
+.classic-header h1 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: var(--theme-color, #0057d8);
+}
+
+.classic-title {
+  font-style: italic;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+/* CONTACT SECTION */
+.classic-contact-section {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 6px 0;
+  gap: 6px;
+}
+
+.classic-contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  width: 100%;
+  gap: 6px;
+}
+
+.classic-contact-item {
+  flex: 1 1 30%;
+  min-width: 100px;
+}
+
+.classic-contact-key {
+  font-weight: 600;
+  display: block;
+}
+
+.classic-divider {
+  border-top: 1.2px solid var(--theme-color, #0057d8);
+  margin: 5px 0 8px;
+}
+
+/* ROWS */
+.classic-row {
+  display: flex;
+  margin-top: 10px;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.classic-section-label {
+  width: 17%;
+  min-width: 90px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: var(--theme-color, #0057d8);
+}
+
+.classic-section-value {
+  width: 83%;
+  font-size: 0.75rem;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+/* Skills in 2 columns with bullets */
+.classic-skill-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px 10px;
+  padding-left: 1rem;
+  list-style-type: disc;
+  margin: 0;
+}
+
+.classic-skill-grid span {
+  position: relative;
+  padding-left: 0.8rem;
+  font-size: 0.75rem;
+  color: #000;
+}
+
+.classic-skill-grid span::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--theme-color, #0057d8);
+  font-weight: bold;
+}
+
+
+
+/* === RESPONSIVE DESIGN === */
+
+@media screen and (max-width: 1024px) {
+  
+  .classic-template {
+    padding: 24px 20px;
+    font-size: 10px;
+  }
+
+  .classic-header h1 {
+    font-size: 1.25rem;
+  }
+
+  .classic-title {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .classic-template {
+    padding: 20px 14px;
+    font-size: 9.5px;
+  }
+  .classic-template {
+    min-height: auto;
+    height: auto;
+  }
+
+  .classic-row {
+    flex-direction: column;
+  }
+
+  .classic-section-label,
+  .classic-section-value {
+    width: 100%;
+  }
+
+  .classic-contact-section {
+    flex-direction: column;
+  }
+
+  .classic-contact-content {
+    flex-direction: column;
+  }
+
+  .classic-skill-grid {
+    grid-template-columns: 1fr;
+    padding-left: 0.5rem;
+  }
+
+  .classic-contact-item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .classic-template {
+    padding: 14px 10px;
+    font-size: 9px;
+  }
+
+  .classic-header h1 {
+    font-size: 1.1rem;
+  }
+
+  .classic-title {
+    font-size: 0.75rem;
+  }
+
+  .classic-skill-grid span {
+    font-size: 0.7rem;
+  }
+
+  .classic-section-label {
+    font-size: 0.7rem;
+  }
+
+  .classic-section-value {
+    font-size: 0.7rem;
+  }
+}

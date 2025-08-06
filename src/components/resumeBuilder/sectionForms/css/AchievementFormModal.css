@@ -1,0 +1,98 @@
+/* ✅ src/components/resumeBuilder/forms/AchievementFormModal.css */
+
+/* Accordion Header Styling */
+.accordion-button:not(.collapsed) {
+  background-color: #f1f5ff;
+  color: var(--tang-blue);
+}
+
+/* Accordion Body */
+.accordion-body {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+/* Accordion Item */
+.accordion-item {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+/* Add More Button */
+button.btn-link {
+  color: var(--tang-blue);
+  text-decoration: none;
+  font-weight: 500;
+  padding-left: 0;
+}
+
+/* Form Responsiveness */
+.accordion-body .form-group {
+  margin-bottom: 1rem;
+}
+
+/* Responsive Modal Content */
+@media (max-width: 768px) {
+  .accordion-body {
+    padding: 12px;
+  }
+
+  .modal-lg {
+    max-width: 95% !important;
+  }
+
+  .accordion-button {
+    font-size: 0.95rem;
+    padding: 10px 14px;
+  }
+
+  .accordion-body .form-group label {
+    font-size: 0.9rem;
+  }
+
+  .accordion-body .form-control,
+  .accordion-body .form-select {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+  .accordion-body .form-check-label {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .accordion-body {
+    padding: 10px;
+  }
+
+  .accordion-button {
+    font-size: 0.88rem;
+    padding: 8px 12px;
+  }
+
+  .accordion-body .form-control,
+  .accordion-body .form-select {
+    padding: 6px 10px;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+  }
+
+  .modal-header .modal-title {
+    font-size: 1rem;
+  }
+
+  .accordion-body .form-check {
+    margin-top: 0.5rem;
+  }
+}
