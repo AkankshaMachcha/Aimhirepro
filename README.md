@@ -50,11 +50,9 @@ aimhire-frontend/
 
 ---
 
-## ive Demo
+## Live Demo
 
 🔗 [https://aimhirepro.tech](https://aimhirepro.tech)  
-_(Ensure backend and AI APIs are running properly to view complete functionality.)_
-
 ---
 
 ## Getting Started (Local Setup)
@@ -88,5 +86,5 @@ npm start
 ## Author
 
 **Akanksha Machcha**  
-🔗 [LinkedIn](https://www.linkedin.com/in/akanksha-machcha-4b1bbb306/)  
-🐙 [GitHub](https://github.com/AkankshaMachcha)
+ [LinkedIn](https://www.linkedin.com/in/akanksha-machcha-4b1bbb306/)  
+ [GitHub](https://github.com/AkankshaMachcha)
