@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# AimHirePro - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ **AimHirePro** is a modern, AI-powered resume analysis and job description matcher platform.  
+This repository contains the **frontend** of the application built using **React**, **Redux**, **Bootstrap**, and **Material UI**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Clean, modern UI for resume and job description input
+- Resume analysis and AI-driven JD matching (via backend API)
+- Resume preview with modal viewer
+- User authentication integration (Login/Register)
+- ATS score and skill match visualizations
+- Responsive design with mobile support
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+| Layer        | Technology         | Purpose                                  |
+|--------------|--------------------|------------------------------------------|
+| UI Framework | React.js           | Build responsive UI components           |
+| State Mgmt   | Redux Toolkit      | Manage app-wide state                    |
+| Styling      | Bootstrap 5        | Grid & utility classes                   |
+| Components   | Material UI        | UI elements like buttons, dialogs        |
+| Routing      | React Router DOM   | Navigate between views                   |
+| API          | Axios              | Handle API calls                         |
+| Alerts       | React Toastify     | Show notifications and messages          |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Folder Structure (Simplified)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+aimhire-frontend/
+├── public/                   # Static files like index.html and favicon
+├── src/
+│   ├── assets/              # Images and CSS files
+│   ├── components/          # Reusable UI components (buttons, navbar, etc.)
+│   ├── pages/               # Route-level pages (Home, Resume Match, etc.)
+│   ├── redux/               # Redux store and slices
+│   ├── services/            # Axios service files (API calls)
+│   ├── App.js               # Main component with route definitions
+│   └── index.js             # Entry point of the React app
+├── .env.example             # Example environment file (no secrets)
+├── package.json             # Dependencies and scripts
+└── README.md                # Project overview
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ive Demo
 
-### `npm run eject`
+🔗 [https://aimhirepro.tech](https://aimhirepro.tech)  
+_(Ensure backend and AI APIs are running properly to view complete functionality.)_
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started (Local Setup)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+# 1. Clone the repo
+git clone https://github.com/AkankshaMachcha/AimHirePro.git
+cd AimHirePro
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# 2. Install dependencies
+npm install
 
-## Learn More
+# 3. Create a .env file
+cp .env.example .env
+# Add your API base URL in .env
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# 4. Start the development server
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Note
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- This repository only includes the **frontend** of AimHirePro.
+- The **backend (Spring Boot)** and **AI matcher (FastAPI)** are hosted separately for security reasons.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Akanksha Machcha**  
+🔗 [LinkedIn](https://www.linkedin.com/in/akanksha-machcha-4b1bbb306/)  
+🐙 [GitHub](https://github.com/AkankshaMachcha)
